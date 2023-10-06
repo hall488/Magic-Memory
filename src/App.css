@@ -1,0 +1,110 @@
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.mtg-logo {
+  height: 100px;
+  padding: 32px;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card-tray {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+select {
+  width: fit-content;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  width: 75%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+li>img {
+  height: 200px;
+  border-radius: 10px;
+}
+
+.gameOverText {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #242424;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  border-radius: 10px;
+  gap: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.87);
+}
+
+.info-text {
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  background-color: #242424;
+  border: 3px solid rgba(255, 255, 255, 0.87);
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 2;
+}
