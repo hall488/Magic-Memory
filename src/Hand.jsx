@@ -54,12 +54,16 @@ function Hand({setCode}) {
                 for(let i = 0; i < response.length; i++) {
                     lis[i].innerHTML = "";
                     lis[i].append(response[i]);
-
-                    VanillaTilt.init((lis[i].children[0]), {
-                        max: 15,
-                        speed: 100,
-                        scale: 1.1,
-                    });
+                    
+                    const isMobile = navigator.userAgentData.mobile;
+                    
+                    if(!isMobile) {
+                        VanillaTilt.init((lis[i].children[0]), {
+                            max: 15,
+                            speed: 100,
+                            scale: 1.1,
+                        });
+                    }
                 }
             setLoaded(true);
         });
